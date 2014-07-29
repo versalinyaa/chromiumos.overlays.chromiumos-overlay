@@ -1,0 +1,25 @@
+From cfda51916850302381d7f459a6df341733e68c92 Mon Sep 17 00:00:00 2001
+From: "Ilja H. Friedel" <ihf@chromium.org>
+Date: Thu, 31 Jul 2014 14:25:04 -0700
+Subject: [PATCH] Install Piglit in lib/piglit${PIGLIT_INSTALL_VERSION_SUFFIX}.
+
+---
+ CMakeLists.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index ee5c9c0..d33ad9e 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -381,7 +381,7 @@ else()
+ 	set(PIGLIT_INSTALL_VERSION_SUFFIX "")
+ endif()
+ set(PIGLIT_INSTALL_LIBDIR
+-    "${CMAKE_INSTALL_LIBDIR}/piglit${PIGLIT_INSTALL_VERSION_SUFFIX}")
++    "lib/piglit${PIGLIT_INSTALL_VERSION_SUFFIX}")
+ if(NOT IS_ABSOLUTE ${PIGLIT_INSTALL_LIBDIR})
+ 	set(PIGLIT_INSTALL_FULL_LIBDIR "${CMAKE_INSTALL_PREFIX}/${PIGLIT_INSTALL_LIBDIR}")
+ else()
+-- 
+1.8.3.2
+
