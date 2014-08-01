@@ -42,7 +42,7 @@ DEPEND="${RDEPEND}
 	"
 
 PATCHES=(
-	"${FILESDIR}/0001-Install-Piglit-in-lib-piglit-PIGLIT_INSTALL_VERSION_.patch"
+	"${FILESDIR}/piglit-script-Fix-module-search-path.patch"
 	)
 
 src_configure() {
